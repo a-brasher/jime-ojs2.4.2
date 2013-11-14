@@ -1,0 +1,250 @@
+@charset "utf-8";
+/**
+*  JIME stylesheet. Copyright 2010 The Open University.
+*/
+
+/* JIME logos. */
+#header     {background:url(jime-logo.png) no-repeat bottom left; height:114px; margin-left:10%; width:90%; min-width:782px /*720px*/;}
+#headerTitle{background:url(jime-journals.png) no-repeat bottom right; height:129px; margin-right:8%; width:92%; }
+#header h1  {font-size:.8em; text-indent:-999px;}
+
+/*width: 150px; font-size: 0.7em; padding-top: 1.5em; padding-left: 1em*/
+.RT.frame #main  {background:url(jime-logo-40b.png) no-repeat top left; padding-top:52px !important; padding-left:0 !important; margin-left:1em;}
+
+.RT.popup-win #header{background:url(jime-logo-40b.png) no-repeat top left; height:43px; margin-top:2px; margin-left:16%; width:70%; min-width:0;}
+.RT.popup-win #headerTitle{background-image:none;}
+
+/* Legacy JIME - named anchors (headings etc.) */
+a[name]:hover {
+	color:inherit; background:inherit; text-decoration:none;
+}
+
+/* Legacy JIME - remove some legacy links. */
+.__img[src="../../resources/icons/3-frame-icon.gif"] {position:absolute; top:-999px;}
+
+/*a:link,a:visited{color:#1f536b}
+a:hover {color:#000; background:#eee;}*/
+a img {border:none;}
+a.PDF, a.HTML, a.help, a.info, a.archive, a.audio, a.video, a.download, a.link, a.forum, a.print, a.next, a.previous, a.help, a.rss{
+  display:inline-block; padding-left: 20px; background-position:left center; background-repeat:no-repeat;
+}
+
+/* OUICE icons, eg. 067addthis_8Bit16x16.gif */
+a.audio{background-image:url(ouice/012audio16.gif)}
+a.link {background-image:url(ouice/01link16.gif)}
+a.feed {background-image:url(ouice/062feed16.gif)}
+a.PDF  {background-image:url(ouice/06pdf16.gif)}
+a.HTML {background-image:url(ouice/022html16.gif)}
+a._addthis{background-image:url(ouice/067addthis16.gif)}
+.addthis img{width:125px; height:16px; border:none;}
+
+#footer_oulogo { width:84px; float:left;  margin:4em 1em 2em 0; /*position:relative; left:-4px;*/  }
+#footer_license{ width:38em; float:right; margin:4em 0 2em; text-align:right; }
+#footer_license img { float:right; width:88px; height:31px; margin:0 0 0 5px; }
+
+ul#footer_share { margin:1em 0 0; padding:0; list-style:none; border-top:1px dotted gray; }
+#footer_share li{ margin:.3em 0; }
+
+#__my_block { position:relative; left:-790px; }
+
+#sidebar .block span.blockTitle, #developedBy {
+  text-transform: capitalize !important; font-weight:bold;
+}
+
+/* OUICE fonts. */
+body {
+	background-color: #fff;
+	font-family: Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif;
+  /*"Times New Roman", Times, Georgia, serif;*/
+  font-size:1em;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Apex","Myriad Pro",Calibri,Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif  !important;
+}
+
+#main, #content, #sidebar, #rightSidebar, #leftSidebar, #header, #footer {
+  font-size:.97em;
+}
+#navbar {font-size:1.2em;}
+/*Placeholde*/ LI small{font-size:.7em;}
+#breadcrumb{font-size:.9em;}
+/* Reading Tools - frame. */
+#main.RT.frame{font-size:.75em !important;}
+.RT.frame li  {margin-top:.1em; }
+
+a {text-decoration: none;}
+a:link   {color: #069;}
+a:active {color: #39c;}
+a:visited{color: #069;}
+a:hover  {color: #025;
+  background-color: #def;
+  text-decoration: underline;
+}
+.__a:hover {
+	color: #EEEEFF;
+	background: #069;
+}/**/
+
+label.error {
+	color: #f60;
+}
+
+input.defaultButton {
+	color: #EEEEFF;
+	background: #069;
+}
+
+#container {
+	background-color: #fff;
+	font-size: 1em;
+}
+
+#header {
+	min-height: 100px;
+	background-color: #fff;
+}
+
+#headerTitle {
+	text-align: center;
+}
+
+#__header h1 {
+	line-height: 2.5;
+	font-family: "Apex","Myriad Pro",Calibri,Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	font-size: 2em;
+	background-color: #069;
+	color:  #fff;
+}
+
+#footer {
+	background-color: #069;
+	color:  #fff;
+}
+
+#footerContent {
+	color:  #fff;
+}
+
+#main {
+	background-color: #fff;
+	border-top: 1px solid #069 /*yellow*/;
+	border-bottom: 1px dotted #069;
+	margin-top: 15px;
+}
+
+/*#main h2..*/
+
+#navbar {
+	border-bottom: 1px dotted #069;
+	text-align: center;
+}
+
+#breadcrumb {
+	height: 18px;
+	line-height: 1.5em;
+	text-align: center;
+	border-bottom: 1px dotted #069;
+	padding: 0;
+	font-style: italic;
+}
+
+#content {
+	border-top: 1px dotted #069;
+}
+
+/*#content h3..*/
+
+span.highlight {
+	border-bottom: 1px dotted #069;
+}
+
+table.listing tr.highlight {
+	background: #fcff64;
+}
+
+table.listing tr.fastTracked {
+	background-color: #EEEEFF;
+}
+
+table.listing td.headseparator {
+	border-top: 1px dotted #069;
+}
+
+table.listing td.endseparator {
+	border-top: 1px dotted #069;
+}
+
+span.formError {
+	color: #f60;
+}
+
+ul.formErrorList {
+	color: #f60;
+}
+
+div.separator {
+	border-bottom: 1px dotted #069;
+}
+
+#rightSidebar ul, #leftSidebar ul {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+#rightSidebar li, #leftSidebar li {
+	list-style-type: none;
+}
+
+#rightSidebar, #leftSidebar {
+	margin-top: 5px;
+	border-bottom: 1px dotted #069;
+}
+
+/* Article/abstract display. */
+#articleAbstract  br {line-height:1px;}
+
+.reviewers_container, .editors_container, .demo_container, .link_container {
+  margin:.8em 0;
+}
+
+/*Includes hacks for legacy/Word markup. */
+.jime-paper-0 div.c1 {
+  width:60%;
+  margin:1em auto;
+  text-align:center;
+  border:1px solid #ccc;
+}
+.jime-paper-0 .c5, .jime-paper-0 h1, .jime-title {
+  text-align:center;
+}
+.jime-paper-0 h1, .jime-title{font-size:1.6em !important; font-weight:bold;}
+.jime-paper-0 h2  {font-size:1.5em !important;}
+.jime-paper-0 h3, .heading3 {font-size:1.25em;}/*2005-18*/
+.jime-paper-0 h4 {font-size:1.2em !important; text-align:left !important;}
+.jime-paper-0 .code, pre{margin:1.6em; padding:6px; border:1px solid #ddd; background:#ffe;}
+.jime-paper-0 .code p {margin:0; font-family:;}
+.jime-paper-0 .figure, .quote, .caption{text-align:center; margin:1em auto;}
+.jime-paper-0 li {margin:.4em 0;}
+.BulletList {text-indent:0 !important; display:list-item; margin-left:2.5em;}/*2005-18*/
+
+.ps-block  { height:0; padding:0; }
+.ps-block a{ text-transform:none !important; font-size:1em !important; text-decoration:underline !important; }
+
+/* Accessiblity */
+#jime-skip a {
+  position:absolute;
+  top:-999px;
+  left:1px;
+  background:#fff;
+  color:navy;
+  border:3px solid #bbb;
+  padding:4px;
+  font-size:medium;
+}
+#jime-skip a:focus, #jime-skip a:active {
+  top:1px;
+  left:1px;
+}
+
