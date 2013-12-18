@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
+<!--
+  * version.xml
+  * Plugin version information.
+  The application element specifies the name of the plugin and the class elemnt specifies  the main class.
+  -->
+<version>
+	<application>JimeMisc</application>
+	<type>plugins.generic</type>
+	<release>0.1.1.2</release>
+	<date>2013-11-29</date>
+	<lazy-load>1</lazy-load>
+	<class>JimeMiscPlugin</class>
+</version>
