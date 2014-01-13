@@ -33,7 +33,7 @@
 	<message key="comments.replies">Replies</message>
 	<message key="comments.title">Title</message>
 	<message key="comments.viewAllComments">View all comments</message>
-	<message key="reader.fullText">Full Text:</message>
+	<message key="reader.fullText">Full Text</message>
 	<message key="rt.addComment">Add comment</message>
 	<message key="rt.admin.configuration">Configuration</message>
 	<message key="rt.admin.contexts.confirmDelete">Are you sure you wish to delete this Context and all associated Searches?</message>

@@ -23,6 +23,9 @@
 	{/if}
 {else}
 	<div id="topBar">
+	{******************* 	Debug code	*****************************************}
+	{* <p>Article var: {$article}</p>	*}
+	{******************* 	End of Debug code	*********************************}
 		{if is_a($article, 'PublishedArticle')}{assign var=galleys value=$article->getGalleys()}{/if}
 		{if $galleys && $subscriptionRequired && $showGalleyLinks}
 			<div id="accessKey">
@@ -49,7 +52,9 @@
 		<div id="articleAbstract">
 		<h4>{translate key="article.abstract"}</h4>
 		<br />
-		<div>{$article->getLocalizedAbstract()|strip_unsafe_html|nl2br}</div>
+{**ou-specific:  Was |strip_unsafe_html|nl2br *}		
+		<div>{$article->getLocalizedAbstract()|strip_unsafe_html}</div>
+{**ou-specific ends. *}		
 		<br />
 		</div>
 	{/if}
@@ -57,9 +62,9 @@
 	{if $article->getLocalizedSubject()}
 		<div id="articleSubject">
 		<h4>{translate key="article.subject"}</h4>
-		<br />
+		
 		<div>{$article->getLocalizedSubject()|escape}</div>
-		<br />
+		
 		</div>
 	{/if}
 

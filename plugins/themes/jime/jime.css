@@ -1,12 +1,14 @@
 @charset "utf-8";
 /**
-*  JIME stylesheet. Copyright 2010 The Open University.
+*  JIME stylesheet. Copyright 2014 The Open University.
+* Modified by AJB to hide JIME logos in articles.
 */
 
 /* JIME logos. */
 #header     {background:url(jime-logo.png) no-repeat bottom left; height:114px; margin-left:10%; width:90%; min-width:782px /*720px*/;}
 #headerTitle{background:url(jime-journals.png) no-repeat bottom right; height:129px; margin-right:8%; width:92%; }
 #header h1  {font-size:.8em; text-indent:-999px;}
+#content div.left img {display:none;}
 
 /*width: 150px; font-size: 0.7em; padding-top: 1.5em; padding-left: 1em*/
 .RT.frame #main  {background:url(jime-logo-40b.png) no-repeat top left; padding-top:52px !important; padding-left:0 !important; margin-left:1em;}
@@ -103,11 +105,11 @@ input.defaultButton {
 	min-height: 100px;
 	background-color: #fff;
 }
-
+/** Defined above 
 #headerTitle {
 	text-align: center;
 }
-
+**/
 #__header h1 {
 	line-height: 2.5;
 	font-family: "Apex","Myriad Pro",Calibri,Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif;
