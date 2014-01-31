@@ -5,8 +5,8 @@
 */
 
 /* JIME logos. */
-#header     {background:url(jime-logo.png) no-repeat bottom left; height:114px; margin-left:10%; width:90%; min-width:782px /*720px*/;}
-#headerTitle{background:url(jime-journals.png) no-repeat bottom right; height:129px; margin-right:8%; width:92%; }
+#header     {background:url(./jime-logo.png) no-repeat bottom left; height:114px; margin-left:10%; width:90%; min-width:782px /*720px*/;}
+#headerTitle{background:url(./jime-journals.png) no-repeat bottom right; height:129px; margin-right:8%; width:92%; }
 #header h1  {font-size:.8em; text-indent:-999px;}
 #content div.left img {display:none;}
 
@@ -56,13 +56,15 @@ ul#footer_share { margin:1em 0 0; padding:0; list-style:none; border-top:1px dot
 /* OUICE fonts. */
 body {
 	background-color: #fff;
-	font-family: Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif;
-  /*"Times New Roman", Times, Georgia, serif;*/
+	font-family: Verdana,Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif;
+	/*** Verdana added to match style added during publishing process	**/
+  /*" Times New Roman", Times, Georgia, serif;*/
   font-size:1em;
 }
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Apex","Myriad Pro",Calibri,Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif  !important;
+  font-family: Verdana, "Apex","Myriad Pro",Calibri,Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif  !important;
 }
+/*** Verdana added to match style added during publishing process	**/
 
 #main, #content, #sidebar, #rightSidebar, #leftSidebar, #header, #footer {
   font-size:.97em;
@@ -105,11 +107,7 @@ input.defaultButton {
 	min-height: 100px;
 	background-color: #fff;
 }
-/** Defined above 
-#headerTitle {
-	text-align: center;
-}
-**/
+
 #__header h1 {
 	line-height: 2.5;
 	font-family: "Apex","Myriad Pro",Calibri,Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif;
@@ -190,6 +188,12 @@ div.separator {
 	border-bottom: 1px dotted #069;
 }
 
+#rightSidebar	{
+/**	border-left:3px solid #1072B9; **/
+	border-left: 1px dotted #006699;
+	padding-left:5px;
+}
+
 #rightSidebar ul, #leftSidebar ul {
 	margin-left: 0px;
 	padding-left: 0px;
@@ -250,3 +254,51 @@ div.separator {
   left:1px;
 }
 
+/** Article styles 	**/
+.authors {
+  font-weight: bold;
+  text-align: left;
+  margin: 0 0;
+  }
+.address {
+  
+  text-align: left;
+  margin: 0 0 1em 0;
+  }
+  .sub_head {
+  font-weight: bold;
+  }
+
+@media screen {
+	p.title-id	{display:none;}
+}
+
+#content  h1 {
+	font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+}
+
+#content #article h2 {
+	font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+}
+
+#content #article h3 {
+	font-size: 1.0em;
+    font-weight: bold;
+    text-align: left;
+}
+
+#content #article h4 {
+	font-size: 1.0em;
+    font-weight: normal;
+	font-style: italic;
+    text-align: left;
+}
+
+
+.label	{
+	text-align: center;
+}
