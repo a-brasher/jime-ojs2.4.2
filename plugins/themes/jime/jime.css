@@ -298,6 +298,11 @@ div.separator {
     text-align: left;
 }
 
+div.figure	{
+	padding:10px;
+	border:5px solid gray;
+	margin:10px; 
+}
 
 .label	{
 	text-align: center;
